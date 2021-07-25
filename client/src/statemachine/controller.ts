@@ -107,9 +107,12 @@ export function postInfo() {
     ...get_store_value(postDataStore)
   };
 
+  const json = JSON.stringify(body);
+  localStorage.setItem("body", json);
+
   fetch(`${apiUrl}/game`, {
     method: "POST",
-    body: JSON.stringify(body),
+    body: json,
     headers: { 'Content-Type': 'application/json' },
   })
 }

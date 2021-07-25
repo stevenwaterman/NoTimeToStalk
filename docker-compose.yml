@@ -8,6 +8,8 @@ services:
         volumes:
          - ./mysql_data:/var/lib/mysql
         restart: unless-stopped
+        ports:
+          - 3306:3306
     server:
         build:
             context: ./server
