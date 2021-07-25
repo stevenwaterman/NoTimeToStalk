@@ -189,11 +189,14 @@ async function start() {
 
       nextId = uuidv4();
 
-      await query(`UPDATE players SET killerId = ? WHERE exploreCharacter = ? AND killerId IS NULL;`, [password, accused])
+      console.log("update query running");
+      await query(`UPDATE players SET killerId = ? WHERE exploreCharacter = ? AND killerId IS NULL;`, [password, accused]);
 
+      console.log("insert query running");
       await query(
         `INSERT INTO players (id, exploreCharacter, playerName, backstory, alibi, accused, accusedReason, timeline) VALUES (?, ?, ?, ?, ?, ?, ?, ?);`,
         [password, character, name, backstory, alibi, accused, accusedReason, JSON.stringify(timeline)]);
+      console.log("query complete")
 
       res.sendStatus(200);
     });
