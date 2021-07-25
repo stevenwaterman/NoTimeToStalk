@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+/client/node_modules/
+/server/node_modules/
+/server/lib/
+/client/public/build/
+/mysql_data
+/node_modules
