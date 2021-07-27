@@ -216,7 +216,7 @@ async function bootstrapDatabase(query: (query: string, args?: any[]) => Promise
         alibi TEXT NOT NULL,
         accused VARCHAR(255) NOT NULL,
         accusedReason TEXT NOT NULL,
-        timeline TEXT NOT NULL,
+        timeline MEDIUMTEXT NOT NULL,
         killerId VARCHAR(255) NULL,
         created timestamp default now()
       );
