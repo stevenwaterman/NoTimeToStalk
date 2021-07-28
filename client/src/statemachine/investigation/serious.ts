@@ -179,6 +179,20 @@ const talkInAtrium: GraphNode = {
 }
 
 function createAccuseOption(character: ExploreCharacters): Option {
+  const confirm: GraphNode = {
+    type: "OPTION",
+    prompt: `Are you sure you want to accuse ${character}?`,
+    options: [
+      {
+        text: "No, go back!",
+        next: () => nodeStore.set(accuse)
+      }, {
+        text: "Yes, I am sure",
+        next: () => nodeStore.set(reason)
+      }
+    ]
+  }
+
   return {
     text: names[character],
     next: () => {
@@ -186,7 +200,7 @@ function createAccuseOption(character: ExploreCharacters): Option {
         state.accused = character;
         return state;
       })
-      nodeStore.set(reason);
+      nodeStore.set(confirm);
     },
     visible: state => state.character !== character
   };
