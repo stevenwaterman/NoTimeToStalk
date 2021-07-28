@@ -64,7 +64,7 @@ const alibi: GraphNode = {
   type: "INPUT",
   backgroundUrl: backgrounds.lounge,
   leftCharacterUrl: characters.investigator.neutral,
-  prompt: "What did you do while exploring the house? Convince the detective that you can't have been the murderer. Please only talk about yourself, the Admiral, and Goldie. Don't mention the other guests, as this will confuse the AI.",
+  prompt: "What did you do while exploring the house? Convince the detective that you can't have been the murderer. The AI works best with long descriptive sentences. Please only talk about yourself, the Admiral, and Goldie - Don't mention the other guests, as this will confuse the AI.",
   inputLength: {
     min: 200,
     max: 500
