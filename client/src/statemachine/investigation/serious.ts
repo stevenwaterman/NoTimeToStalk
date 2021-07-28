@@ -181,9 +181,10 @@ const talkInAtrium: GraphNode = {
 function createAccuseOption(character: ExploreCharacters): Option {
   const confirm: GraphNode = {
     type: "OPTION",
+    backgroundUrl: backgrounds.atrium,
     leftCharacterUrl: characters.investigator.neutral,
     rightCharacterUrl: characters[character].suspicious,
-    prompt: `Are you sure you want to accuse ${character}?`,
+    prompt: `Are you sure you want to accuse ${names[character]}?`,
     options: [
       {
         text: "No, go back!",
