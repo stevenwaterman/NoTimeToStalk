@@ -70,6 +70,7 @@ async function start() {
   }
 
   await bootstrapDatabase(query);
+  await query("USE game;")
 
   const app = express();
   app.use(express.json())
