@@ -45,7 +45,7 @@
   {#if show}
     <img 
       class="bg"
-      src={`/notimetostalk/assets/characters/${node.character}/intro.jpg`} 
+      src={`/NoTimeToStalk/assets/characters/${node.character}/intro.jpg`} 
       in:scale={{duration: 1000, easing:cubicIn}} 
       out:fade={{duration: 500}} 
       on:introend="{() => setTimeout(() => {show = false;}, 3000)}"
