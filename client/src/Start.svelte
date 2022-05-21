@@ -1,5 +1,6 @@
 <script lang="ts">
   import { createEventDispatcher } from "svelte";
+  import { savedState } from "./savedState";
   // import { apiUrl } from "./main";
   import type { ExploreCharacters } from "./statemachine/controller";
   import { fetchedStateStore, userInputStore } from "./statemachine/state";
@@ -16,6 +17,7 @@
       userInput.name = name;
       return userInput;
     });
+    state = savedState;
     // request = fetch(`${apiUrl}/game?id=${password}`);
   }
 
