@@ -35,7 +35,7 @@ export const timeStore: Readable<{ time: number, paused: boolean}> & { pause: ()
 
 export const pausedStore: Readable<boolean> = derived(timeStore, ({paused}) => paused);
 
-type FetchedState = {
+export type FetchedState = {
   character: ExploreCharacters;
   backstories: Partial<Record<ExploreCharacters, number>>;
   alibis: Partial<Record<ExploreCharacters, string>>;

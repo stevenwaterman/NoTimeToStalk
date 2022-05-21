@@ -5,5 +5,3 @@ export default new App({
   props: {
   }
 });
-
-export const apiUrl = "http://game.stewaterman.com:8080";

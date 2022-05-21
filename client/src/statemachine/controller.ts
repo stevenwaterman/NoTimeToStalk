@@ -1,6 +1,5 @@
 import { get_store_value } from "svelte/internal";
 import { derived, Readable, Writable, writable } from "svelte/store";
-import { apiUrl } from "../main";
 import type { CharacterTimeline, CharacterTimelineStep, RoomFlags } from "./explore/explore";
 import { characterStateStore, fetchedStateStore, otherCharacterStateStore, postDataStore, roomFlagsStore, timeStore, UserInput, userInputStore } from "./state";
 
@@ -110,9 +109,9 @@ export function postInfo() {
   const json = JSON.stringify(body);
   localStorage.setItem("body", json);
 
-  fetch(`${apiUrl}/game`, {
-    method: "POST",
-    body: json,
-    headers: { 'Content-Type': 'application/json' },
-  })
+  // fetch(`${apiUrl}/game`, {
+  //   method: "POST",
+  //   body: json,
+  //   headers: { 'Content-Type': 'application/json' },
+  // })
 }
