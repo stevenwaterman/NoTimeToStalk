@@ -126,4 +126,4 @@
 </div>
 
 <!-- svelte-ignore a11y-missing-attribute -->
-<img class="bg" src={'/assets/backgrounds/start.jpg'}/>
+<img class="bg" src={'/notimetostalk/assets/backgrounds/start.jpg'}/>

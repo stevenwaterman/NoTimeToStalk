@@ -92,7 +92,7 @@ export type CharacterLabels = "red" | "yellow" | "pink" | "green" | "blue" | "bl
 export function makeBackgrounds<KEYS extends string>(folder: string, keys: KEYS[]): Record<KEYS, string> {
   const backgrounds: Record<KEYS, string> = {} as Record<KEYS, string>;
   keys.forEach(key => {
-    backgrounds[key] = `/assets/backgrounds/${folder}/${key}.jpg`;
+    backgrounds[key] = `/notimetostalk/assets/backgrounds/${folder}/${key}.jpg`;
   });
   return backgrounds;
 }

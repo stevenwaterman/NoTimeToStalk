@@ -30,4 +30,4 @@
 </script>
 
 <!-- svelte-ignore a11y-media-has-caption -->
-<audio controls={false} loop={loop} src={`/assets/audio/${filePath}.mp3`} autoplay={autoplay} bind:this={audio} on:ended={ended} out:fadeVolume/>
+<audio controls={false} loop={loop} src={`/notimetostalk/assets/audio/${filePath}.mp3`} autoplay={autoplay} bind:this={audio} on:ended={ended} out:fadeVolume/>

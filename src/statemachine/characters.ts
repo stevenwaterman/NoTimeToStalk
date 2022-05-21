@@ -3,7 +3,7 @@ import type { CharacterLabels } from "./controller";
 function getCharacterUrls<POSES extends string>(character: CharacterLabels, poses: POSES[]): Record<POSES, string> {
   const urls: Record<POSES, string> = {} as Record<POSES, string>;
   poses.forEach(pose => {
-    urls[pose] = `/assets/characters/${character}/${pose}.png`
+    urls[pose] = `/notimetostalk/assets/characters/${character}/${pose}.png`
   });
   return urls;
 }

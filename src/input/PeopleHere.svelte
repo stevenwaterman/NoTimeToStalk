@@ -98,7 +98,7 @@
     transition:fly|local={{y: -100}}
   >
     <!-- svelte-ignore a11y-missing-attribute -->
-    <img src={`assets/avatars/${character}.jpg`}>
+    <img src={`notimetostalk/assets/avatars/${character}.jpg`}>
     {#if suspicious}
       <div class="button" transition:fade|local>!</div>
     {/if}
