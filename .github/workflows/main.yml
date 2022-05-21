@@ -3,7 +3,7 @@ name: AutomaticHost
 on:
   push:
     branches: 
-      - master
+      - local
 
 jobs:
   build:
